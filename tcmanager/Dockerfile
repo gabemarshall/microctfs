@@ -20,6 +20,7 @@ RUN echo 'flag:8ed5c4b19ff02acabe01b0e342fe3016' > flag.txt
 RUN chmod 600 flag.txt
 RUN chmod 4755 /usr/bin/moar
 RUN chmod +x /*.sh
+RUN chown -R deployme /tomcat 
 
 EXPOSE 8080
 USER deployme
