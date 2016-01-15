@@ -1,0 +1,7 @@
+[Mon Jan 11 04:59:39.754639 2016] [proxy:error] [pid 9940:tid 140264102393600] [client 141.212.122.81:16690] AH00898: Error reading from remote server returned by /
+[Mon Jan 11 05:58:19.963034 2016] [proxy:warn] [pid 9941:tid 140264169535232] [client 208.100.26.231:44093] AH01092: no HTTP 0.9 request (with no host line) on incoming request and preserve host set forcing hostname to be foo.com for uri /
+[Tue Jan 12 01:51:35.392075 2016] [proxy:warn] [pid 9940:tid 140264102393600] [client 208.52.161.177:30856] AH01092: no HTTP 0.9 request (with no host line) on incoming request and preserve host set forcing hostname to be fooobar.com for uri /phpmyadmin/scripts/setup.php
+[Tue Jan 12 08:27:31.140925 2016] [proxy:warn] [pid 9941:tid 140264001681152] [client 89.248.172.173:12250] AH01092: no HTTP 0.9 request (with no host line) on incoming request and preserve host set forcing hostname to be foobar.foo for uri /
+[Wed Jan 13 07:39:03.936052 2016] [proxy:warn] [pid 9941:tid 140264127571712] [client 50.116.121.188:50600] AH01092: no HTTP 0.9 request (with no host line) on incoming request and preserve host set forcing hostname to be foobarrr.com for uri /
+[Wed Jan 13 07:39:03.936946 2016] [proxy_http:error] [pid 9941:tid 140264127571712] (20014)Internal error: [client 50.116.121.188:50600] AH01102: error reading status line from remote server 127.0.0.1:1337
+[Wed Jan 13 07:39:03.938624 2016] [proxy:error] [pid 9941:tid 140264127571712] [client 50.116.121.188:50600] AH00898: Error reading from remote server returned by /

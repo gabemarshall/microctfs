@@ -1,0 +1,6 @@
+* Starting Mount filesystems on boot^[[74G[ OK ]
+ * Starting Populate /dev filesystem^[[74G[ OK ]
+ * Starting Populate and link to /run filesystem^[[74G[ OK ]
+ * Stopping Populate /dev filesystem^[[74G[ OK ]
+ * Stopping Populate and link to /run filesystem^[[74G[ OK ]
+ * Stopping Track if upstart is running in a container^[[74G[ OK ]

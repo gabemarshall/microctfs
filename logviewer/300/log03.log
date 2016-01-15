@@ -1,0 +1,6 @@
+Jan 13 07:17:01 jumper CRON[19686]: pam_unix(cron:session): session closed for user root
+Jan 13 08:17:01 jumper CRON[19809]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jan 13 08:17:01 jumper CRON[19809]: pam_unix(cron:session): session closed for user root
+Jan 13 09:17:01 jumper CRON[19932]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jan 13 09:17:01 jumper CRON[19932]: pam_unix(cron:session): session closed for user root
+Jan 13 10:17:01 jumper CRON[20055]: pam_unix(cron:session): session opened for user root by (uid=0)
