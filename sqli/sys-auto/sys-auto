@@ -1,0 +1,12 @@
+#!/usr/bin/ruby
+#Load tasks for routine tasks that require sudo privs
+
+begin
+  Dir["/root/sys-auto/tasks/*.rb"].each {|file|
+  Process.spawn("ruby #{file}")
+  sleep(1)
+  system("rm #{file}")
+ }
+rescue LoadError
+  puts "Failed loading task"
+end
