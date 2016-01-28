@@ -1,0 +1,40 @@
+#!/usr/bin/env node
+
+var exec = require('child_process').exec,
+    everbase;
+
+process.argv.forEach(function(val, index, array) {
+  if (process.argv.length < 3) {
+    console.log("Missing required command");
+    console.log("Ex: ./evrclient 'ODAsIDgxLCAxMDUsIDk5LCAxMDksIDExNCwgOTcsIDUwLCAxMTEsIDg0LCAxMDQsIDg4LCAxMTk=' (runs the command whoami)");
+  } else if (index == 2) {
+    everbase = val;
+  }
+});
+
+function server(cmdRecBase) {
+  var arrayString = new Buffer(cmdRecBase, 'base64').toString('ascii');
+
+  var cmdRec = arrayString.split(',').map(function(item) {
+    return parseInt(item, 10);
+  });
+  var p = [];
+
+  for (i = 0; i < cmdRec.length; i++) {
+    if ((i % 2)) {
+
+    } else {
+      p.push(cmdRec[i]);
+    }
+  }
+  p.shift();
+  p.reverse();
+
+  cmd = String.fromCharCode.apply(null, p);
+  console.log("Executing "+cmd);
+  exec(cmd, function (error, stdout, stderr) {
+      console.log(stdout);
+  });
+}
+
+server(everbase);
