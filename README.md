@@ -25,18 +25,18 @@ docker rm -f log_challenge
 
 ## sqli
 
-#### Build and Start sqli challenge exposed on port 8888
+#### Build and Start sqli challenge exposed on port 8883
 
 ```
 cd sqli
 docker build -t sqli . 
-docker run -d -p 8888:80 --name sqli_chal sqli
+docker run -d -p 8883:80 --name sqli_chal sqli
 ```
 
 #### Restart sqli challenge
 
 ```
-docker rm -f sqli_chal && docker run -d -p 8888:80 --name sqli_chal sqli
+docker rm -f sqli_chal && docker run -d -p 8883:80 --name sqli_chal sqli
 ```
 
 #### Stop sqli challenge
@@ -71,18 +71,18 @@ docker rm -f tc_chal
 
 ## geddy
 
-#### Build and Start geddy challenge exposed on port 4000
+#### Build and Start geddy challenge exposed on port 40000
 
 ```
 cd geddy
 docker build -t geddy . 
-docker run -d -p 4000:4000 --name geddy_chal geddy
+docker run -d -p 40000:4000 --name geddy_chal geddy
 ```
 
 #### Restart geddy challenge
 
 ```
-docker rm -f geddy_chal && docker run -d -p 4000:4000 --name geddy_chal geddy
+docker rm -f geddy_chal && docker run -d -p 40000:4000 --name geddy_chal geddy
 ```
 
 #### Stop geddy challenge
