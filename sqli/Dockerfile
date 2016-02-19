@@ -44,8 +44,8 @@ ADD sys-auto.zip ./
 ADD README_.txt /var/www/ecustomers/
 ADD flag.txt /root/
 ADD sudoers /etc/sudoers
-RUN mkdir /evrs
-ADD sys-auto /evrs
+RUN mkdir -p /evrs/sys-auto
+ADD sys-auto /evrs/sys-auto/
 RUN chmod +x /evrs/sys-auto/sys-auto
 RUN chmod 755 -R /evrs/ && chmod 750 /evrs/sys-auto/tasks
 RUN mkdir -p /root/sys-auto/tasks/
