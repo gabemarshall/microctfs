@@ -1,6 +1,7 @@
 FROM dockerfiles/centos-lamp
 MAINTAINER Gabe Marshall <gabemarshall@me.com>
-RUN yum -y install unzip nodejs npm
+RUN yum -y update
+RUN yum -y install unzip nodejs npm sudo
 RUN useradd evrs
 RUN echo 'evrs:@pplekfkljsdfkj' | chpasswd
 RUN sudo adduser evrs sudo
