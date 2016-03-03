@@ -51,7 +51,7 @@ File Name
     {
       $log = $_POST["log"];
     } 
-    if(strlen($log)<25 && strpos($log, 'ping') == false)
+    if(strlen($log)<30 && strpos($log, 'ping') == false)
     {
        echo(shell_exec("cat `pwd`/" . $_POST["log"] . ".log"));
     }
