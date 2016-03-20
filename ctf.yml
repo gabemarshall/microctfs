@@ -1,0 +1,18 @@
+---
+- hosts: ctf
+  remote_user: root
+  tasks:
+    - name: Clone microctfs
+      raw: git clone https://github.com/gabemarshall/microctfs.git
+ 
+    - name: Build geddy challenge
+      raw: docker build -t geddy /root/microctfs/geddy/
+
+    - name: Build logviewer challenge
+      raw: docker build -t geddy /root/microctfs/logviewer/
+
+    - name: Build sqli challenge
+      raw: docker build -t geddy /root/microctfs/sqli/
+
+    - name: Build tcmanager challenge
+      raw: docker build -t geddy /root/microctfs/tcmanager/
