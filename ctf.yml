@@ -1,18 +1,21 @@
 ---
 - hosts: ctf
-  remote_user: root
+  remote_user: eversec
   tasks:
     - name: Clone microctfs
       raw: git clone https://github.com/gabemarshall/microctfs.git
  
     - name: Build geddy challenge
-      raw: docker build -t geddy /root/microctfs/geddy/
+      raw: docker build -t geddy /home/eversec/microctfs/geddy/
 
     - name: Build logviewer challenge
-      raw: docker build -t geddy /root/microctfs/logviewer/
+      raw: docker build -t geddy /home/eversec/microctfs/logviewer/
 
     - name: Build sqli challenge
-      raw: docker build -t geddy /root/microctfs/sqli/
+      raw: docker build -t geddy /home/eversec/microctfs/sqli/
 
     - name: Build tcmanager challenge
-      raw: docker build -t geddy /root/microctfs/tcmanager/
+      raw: docker build -t geddy /home/eversec/microctfs/tcmanager/
+
+    - name: Build printf challenge
+      raw: docker build -t printf /home/eversec/microctfs/printf/

@@ -1,0 +1,9 @@
+service elogin
+{
+socket_type = stream
+protocol = tcp
+wait = no
+user = evrs
+server = /usr/bin/elogin
+instances = 20
+}
