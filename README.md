@@ -90,3 +90,25 @@ docker rm -f geddy_chal && docker run -d -p 40000:4000 --name geddy_chal geddy
 ```
 docker rm -f geddy_chal
 ```
+
+## printf
+
+#### Build and Start printf challenge exposed on port 1337
+
+```
+cd printf
+docker build -t printf .
+docker run -d -p 1337:1337 --name printfchal printf
+```
+
+#### Restart printf challenge
+
+```
+docker rm -f printfchal && docker run -d -p 1337:1337 --name printfchal printf
+```
+
+#### Stop geddy challenge
+
+```
+docker rm -f printfchal
+```
