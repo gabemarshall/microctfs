@@ -9,13 +9,13 @@
       raw: docker build -t geddy /home/eversec/microctfs/geddy/
 
     - name: Build logviewer challenge
-      raw: docker build -t geddy /home/eversec/microctfs/logviewer/
+      raw: docker build -t logviewer /home/eversec/microctfs/logviewer/
 
     - name: Build sqli challenge
-      raw: docker build -t geddy /home/eversec/microctfs/sqli/
+      raw: docker build -t sqli /home/eversec/microctfs/sqli/
 
     - name: Build tcmanager challenge
-      raw: docker build -t geddy /home/eversec/microctfs/tcmanager/
+      raw: docker build -t tcmanager /home/eversec/microctfs/tcmanager/
 
     - name: Build printf challenge
       raw: docker build -t printf /home/eversec/microctfs/printf/
