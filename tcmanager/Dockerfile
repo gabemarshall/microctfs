@@ -21,7 +21,7 @@ RUN chmod 600 flag.txt
 RUN chmod 4755 /usr/bin/moar
 RUN chmod +x /*.sh
 RUN chown -R deployme /tomcat 
-
+RUN apt-get update -yqq && apt-get -yqq install python curl dnsutils
 EXPOSE 8080
 USER deployme
 CMD ["/run.sh"]
