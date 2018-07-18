@@ -107,7 +107,7 @@ docker run -d -p 1337:1337 --name printfchal printf
 docker rm -f printfchal && docker run -d -p 1337:1337 --name printfchal printf
 ```
 
-#### Stop geddy challenge
+#### Stop printf challenge
 
 ```
 docker rm -f printfchal
