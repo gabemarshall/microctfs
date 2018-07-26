@@ -112,3 +112,15 @@ docker rm -f printfchal && docker run -d -p 1337:1337 --name printfchal printf
 ```
 docker rm -f printfchal
 ```
+
+
+## xxe
+
+#### Build and Start xxe challenge exposed on port 8080
+
+```
+cd xxe
+docker build -t xxe .
+docker run -d -p 8080:8080 xxe mvn jetty:run
+```
+
